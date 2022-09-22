@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Order.Common\Order.Common.csproj" />
+    <ProjectReference Include="..\..\Persistence\Order.Persistence.Database\Order.Persistence.Database.csproj" />
+    <ProjectReference Include="..\..\..\Common\Service.Common.Collection\Service.Common.Collection.csproj" />
+    <ProjectReference Include="..\..\..\Common\Service.Common.Mapping\Service.Common.Mapping.csproj" />
+    <ProjectReference Include="..\..\..\Common\Service.Common.Pagging\Service.Common.Pagging.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,161 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome (Catalog.Api)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}\\03. Services\\02. Catalog\\Api\\Catalog.Api\\bin\\Debug\\net6.0\\Catalog.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}\\03. Services\\02. Catalog\\Api\\Catalog.Api",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+http://\\S+:([0-9]+)",
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                //"ASPNETCORE_URLS":"http://localhost:5111"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Launch Chrome (Customer.Api)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}\\03. Services\\03. Customer\\Api\\Customer.Api\\bin\\Debug\\net6.0\\Customer.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}\\03. Services\\03. Customer\\Api\\Customer.Api",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+http://\\S+:([0-9]+)",
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                //"ASPNETCORE_URLS":"http://localhost:5111"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Launch Chrome (Order.Api)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}\\03. Services\\04. Order\\Api\\Order.Api\\bin\\Debug\\net6.0\\Order.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}\\03. Services\\04. Order\\Api\\Order.Api",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+http://\\S+:([0-9]+)",
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                //"ASPNETCORE_URLS":"http://localhost:5111"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Launch Chrome (Identity.Api)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}\\03. Services\\01. Identity\\Api\\Identity.Api\\bin\\Debug\\net6.0\\Identity.Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}\\03. Services\\01. Identity\\Api\\Identity.Api",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+http://\\S+:([0-9]+)",
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                //"ASPNETCORE_URLS":"http://localhost:5111"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Launch Chrome (Gateway.Api)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}\\02. Api.Gateways\\APIs\\Api.Gateway.WebClient\\bin\\Debug\\net6.0\\Api.Gateway.WebClient.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}\\02. Api.Gateways\\APIs\\Api.Gateway.WebClient",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+http://\\S+:([0-9]+)",
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                //"ASPNETCORE_URLS":"http://localhost:5111"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Launch Chrome (Clients.Authentication)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}\\01. Clients\\Clients.Authentication\\bin\\Debug\\net6.0\\Clients.Authentication.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}\\01. Clients\\Clients.Authentication",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+http://\\S+:([0-9]+)",
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                //"ASPNETCORE_URLS":"http://localhost:5111"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "Launch Chrome (Clients.WebClient)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}\\01. Clients\\Clients.WebClient\\bin\\Debug\\net6.0\\Clients.WebClient.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}\\01. Clients\\Clients.WebClient",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+http://\\S+:([0-9]+)",
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                //"ASPNETCORE_URLS":"http://localhost:5111"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
